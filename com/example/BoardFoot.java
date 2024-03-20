@@ -49,7 +49,7 @@ public final class BoardFoot {
             float userWidth = sc.nextFloat(); // Read user input for width
             
             float length = calculateBoardFoot(userHeight, userWidth); // Calculate the length
-            System.out.println("The needed length of a BoardFoot in inches is: " + length);
+            System.out.println("The needed length of a BoardFoot in inches is: " + length + " in");
         } catch (Exception e) {
             // Catch any exceptions that may occur during input/output operations
             System.out.println("Error: " + e.getMessage());
