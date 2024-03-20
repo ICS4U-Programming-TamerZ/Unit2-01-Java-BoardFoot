@@ -47,9 +47,13 @@ public final class BoardFoot {
             float userHeight = sc.nextFloat(); // Read user input for height
             System.out.print("Please enter the width of your object: ");
             float userWidth = sc.nextFloat(); // Read user input for width
-            
-            float length = calculateBoardFoot(userHeight, userWidth); // Calculate the length
-            System.out.println("The needed length of a BoardFoot in inches is: " + length + " in");
+            if (userHeight > 0 && userWidth > 0) {
+              float length = calculateBoardFoot(userHeight, userWidth); // Calculate the length
+              System.out.println("The needed length of a BoardFoot in inches is: " + length + " in");
+            }
+            else {
+              System.out.println("Must be Positive");
+            }
         } catch (Exception e) {
             // Catch any exceptions that may occur during input/output operations
             System.out.println("Error: " + e.getMessage());
